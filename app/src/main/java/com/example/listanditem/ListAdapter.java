@@ -1,6 +1,7 @@
 package com.example.listanditem;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,12 +35,12 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Card card = list.get(position);
-//        Glide.with(context).load(user.photo).into(holder.imageItem);
-//        holder.item.setOnClickListener(v -> {
-//            Intent intent = new Intent(context, DetailActivity.class);
-//            intent.putExtra("login", user.login);
-//            context.startActivity(intent);
-//        });
+        Glide.with(context).load(card.imageUrl).into(holder.cardImg);
+        holder.cardLayout.setOnClickListener(v -> {
+            Intent intent = new Intent(context, DetailedCardActivity.class);
+            intent.putExtra("cardId", card.id);
+            context.startActivity(intent);
+        });
     }
 
     @Override

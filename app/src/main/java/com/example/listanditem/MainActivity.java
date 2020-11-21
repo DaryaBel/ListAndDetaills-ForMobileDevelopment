@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         api = ApiConfiguration.getApi();
         disposables = new CompositeDisposable();
-//        this.onClick(this.recyclerView);
+        this.onClick(this.recyclerView);
     }
 
     public void onClick(View view){
