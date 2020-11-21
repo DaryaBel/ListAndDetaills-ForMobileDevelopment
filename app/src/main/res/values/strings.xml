@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">ListAndItem</string>
-    <string name="ButtonDownload">Загрузить</string>
+    <string name="ButtonDownload">Загрузить карточки покемонов</string>
     <string name="cardText"></string>
 </resources>

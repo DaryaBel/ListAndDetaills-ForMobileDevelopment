@@ -10,7 +10,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiConfiguration {
-    public static final String BASE_URL = "https://api.pokemontcg.io/v1";
+    public static final String BASE_URL = "https://api.pokemontcg.io/v1/";
 
     private static ApiInterface api;
     private static ApiConfiguration mInstance;
